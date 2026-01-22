@@ -18,11 +18,11 @@ public class FormController {
         return "form";
     }
 
-    @PostMapping(value = "/form")
-    public String dataSuccessForm(Model model) {
-        counter++;
-        model.addAttribute("counter", counter);
-        return "success";
-    }
 
+    @PostMapping(value = "/form")
+    public String pathDataFromFillingOutTheForm(@ModelAttribute("animal") Animal animal, Model model) {
+        System.out.println(animal);
+        model.addAttribute("animal", animal);
+        return "success-animal-form";
+    }
 }

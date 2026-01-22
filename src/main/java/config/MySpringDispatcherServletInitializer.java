@@ -18,4 +18,5 @@ public class MySpringDispatcherServletInitializer extends AbstractAnnotationConf
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
+
 }

@@ -12,5 +12,4 @@ public class Animal {
     private String breed;
     private Boolean tail;
     private Integer age;
-
 }
